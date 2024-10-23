@@ -365,6 +365,10 @@
     max-width: 492px;
   }
 
+  .main {
+    margin-block-end: 63px;
+  }
+
   .content-section:nth-child(2) {
     grid-template-columns: repeat(3, 315px);
   }
