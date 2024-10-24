@@ -24,12 +24,22 @@
   display: none;
 }
 
-.theme_light .header-title {
-  text-shadow: 4px 4px 0px #ff0070;
-}
-
-.theme_light .footer-text {
-  text-shadow: 2px 2px 0px #ff0070;
+@media (width >= 1024px) {
+  .theme_light .header-title {
+    text-shadow: 4px 4px 0px #ff0070;
+  }
+  
+  .theme_light .footer-text {
+    text-shadow: 2px 2px 0px #ff0070;
+  }
+  
+  .theme_auto  .header-title {
+    text-shadow: 4px 4px 0px #ff0070;
+  }
+  
+  .theme_auto  .footer-text {
+    text-shadow: 2px 2px 0px #ff0070;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -43,5 +53,13 @@
     --hover-color: #32312d66;
     --text-color: #353430;
     --url-background-image: url(../images/cover-image-light.png);
+  }
+
+  .theme_auto .header-decoration {
+    display: none;
+  }
+
+  .theme_light .header-decoration {
+    display: none;
   }
 }
